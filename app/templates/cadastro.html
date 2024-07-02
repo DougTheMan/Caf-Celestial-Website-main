@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+    Home - Café Celestia
+
+    {% endblock %}
+
+    {% block BlockConteudo %}
+
+    <div class = "text-center bg-primary text-light">
+
+        Cadastrando, opa tem login já?
+
+    </div>
+    <a class="" href="{{url_for('CadastroPage')}}" role="button"> Tenho Login</a>
+    
+    <a class="btn btn-primary mt-4 p-4" href="{{url_for('HomePage')}}" role="button">Link Home</a>
+
+    {% endblock %}

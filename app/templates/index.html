@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+    INDEX - Café Celestia
+
+    {% endblock %}
+
+    {% include 'nave.html' %}
+
+    {% block  BlockConteudo %}
+
+        @everyone
+        Testando Index
+
+        <p>to cagano duro </p> 
+
+        Aqui vamos usar para testes e manter esse local escondido
+
+        <a class="btn btn-primary" href="{{url_for('HomePage')}}" role="button">Link HOME</a>
+        
+
+    {% endblock %}
+
+
