@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+    Home - Café Celestia
+
+    {% endblock %}
+
+{% include 'naveltda.html' %}
+
+    {% block BlockConteudo %}
+
+    <div class = "text-center bg-primary text-light">
+
+        login caso senão 
+
+
+    </div>
+    <a class="" href="{{url_for('CadastroPage')}}" role="button"> Faça seu Cadastro</a>
+
+    <a class="btn btn-primary mt-4 p-4" href="{{url_for('HomePage')}}" role="button">Link Home</a>
+
+    {% endblock %}

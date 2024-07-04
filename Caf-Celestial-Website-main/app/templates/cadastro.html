@@ -1,0 +1,69 @@
+
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+    Home - Café Celestia
+
+    {% endblock %}
+
+{% include 'naveltda.html' %}
+
+    {% block BlockConteudo %}
+    <div class="container">
+        <div class="row mt-4">
+            <h3>Envio de Contatos</h3>
+            </div>
+            <form action="" method="POST" class="row mt-4 p-4 round border shadow">
+                {{form.csrf_token()}}
+
+                {{form.usuario.label()}}
+                {{form.usuario(class="form-control")}}
+
+                {{form.email.label()}}
+                {{form.email(class="form-control")}}
+
+
+                {{form.senha.label()}}
+                {{form.senha(class="form-control")}}
+
+                {{form.senha2.label()}}
+                {{form.senha2(class="form-control")}}
+
+                {{form.btnSubmit(class="btn btn-primary form-control col-12 mt-3")}} 
+            </form>
+</div>
+
+
+        <div class = "container">
+            <div class = "text-center bg-primary text-light">
+    
+                <form action="" method="POST" class="row mt-4 p-4 round border shadow">
+                    <div class="text-center">
+                        <h3>Faça Cadastro FUNFING</h3>
+                    </div>
+    
+                    {{form1.csrf_token}}
+                
+                    {{form1.nome.label()}}
+                    {{form1.nome(class="form-control")}}
+
+    
+                    {{form1.senha.label()}}
+                    {{form1.senha(class="form-control")}}
+    
+    
+                    {{form1.btnSubmit(class="btn btn-primary text-light mt-4")}}
+    
+                    Cadastrando, opa tem login já?
+                    Da erro ao enviar
+    
+                </form>
+            </div>
+        </div>
+        <a class="" href="{{url_for('CadastroPage')}}" role="button"> Tenho Login</a>
+        
+        <a class="btn btn-primary mt-4 p-4" href="{{url_for('HomePage')}}" role="button">Link Home</a>
+    </div>
+    {% endblock %}
+    

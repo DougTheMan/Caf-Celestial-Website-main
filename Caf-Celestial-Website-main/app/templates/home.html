@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+
+    {% block BlockTitulo %}
+
+    Home - Café Celestia
+
+    {% endblock %}
+
+{% include 'nave.html' %}
+
+    {% block BlockConteudo %}
+
+    HOME 
+
+    SEM LOGIN ---> Mover para Login
+
+    COM LOGIN ---> Prosseguir normalmente
+    -Configurações de Perfil
+    -Olá {{user}}!
+    -Nós da Café Celestia te desejamos um ótimo dia!
+    
+    - FAQ
+    - CONTATO               }
+    - SOBRE Nós (empresa)   } ISSO VAI ESTAR NO RODA pÉ
+
+    
+    <a class="button btn-primary" href="{{url_for('CadastroPage')}}" role="button"> Faça seu Cadastro</a>
+
+    {% include 'naverodapé.html' %}
+    {% endblock %}
+
+
+
